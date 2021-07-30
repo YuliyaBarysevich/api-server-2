@@ -37,7 +37,7 @@ router.delete('/:model/:id', handleDelete);
 
 async function handleGetAll(req, res) {
   let allRecords = await req.model.get();
-  res.status.json(allRecords);
+  res.status(200).json(allRecords);
 };
 
 async function handleGetOne(req, res){
