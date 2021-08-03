@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/YuliyaBarysevich/api-server-2#readme",
   "dependencies": {
+    "@code-fellows/supergoose": "^1.1.0",
     "base-64": "^1.0.0",
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
@@ -29,6 +30,7 @@
     "jsonwebtoken": "^8.5.1",
     "method-override": "^3.0.0",
     "mongoose": "^5.13.3",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "supertest": "^6.1.4"
   }
 }
