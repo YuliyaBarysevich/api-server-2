@@ -4,9 +4,9 @@ const mongoose = require('mongoose');
 
 const todoSchema = mongoose.Schema({
   text: { type: String, required: true },
-  assignee: { type: String },
+  notes: { type: String },
   complete: { type: Boolean, default: false },
-  difficulty: { type: Number, default: 1 }
+  priority: { type: String, default: "None", enum: ['High !!!', 'Medium !!', 'Low !', 'None'] }
 });
 
 const todoModel = mongoose.model('todo', todoSchema);
