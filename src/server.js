@@ -32,6 +32,7 @@ app.use(authRoutes);
 app.use(notFound);
 app.use(errorHandler);
 
+
 module.exports = {
   server: app, 
   start: (port) => { 
